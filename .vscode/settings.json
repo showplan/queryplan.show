@@ -1,0 +1,11 @@
+{
+    "files.exclude": {
+        "coverage": true,
+        "node_modules": true
+    },
+    "workbench.colorCustomizations": {
+        "statusBar.background": "#42b883",
+        "statusBarItem.hoverBackground": "#359268",
+        "statusBar.foreground": "#15202b"
+    }
+}
