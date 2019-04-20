@@ -9,17 +9,18 @@ module.exports = {
     moduleNameMapper: {
         '^@/(.*)$': '<rootDir>/src/$1',
     },
+    reporters: ['default', 'jest-junit'],
     snapshotSerializers: ['jest-serializer-vue'],
     collectCoverage: false,
     testMatch: ['**/tests/unit/**/*.spec.(js|jsx|ts|tsx)|**/__tests__/*.(js|jsx|ts|tsx)'],
-    transformIgnorePatterns: ['node_modules/(?!showplan-vue)/'],
+    transformIgnorePatterns: ['node_modules/(?!vue-json-tree)/'],
     testURL: 'http://localhost/',
     globals: {
         'ts-jest': {
-            tsConfig: 'tsConfig.jest.json',
+            tsConfig: 'tsconfig.jest.json',
         },
         'vue-jest': {
-            tsConfig: 'tsConfig.jest.json',
+            tsConfig: 'tsconfig.jest.json',
         },
     },
 };
