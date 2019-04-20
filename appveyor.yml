@@ -20,7 +20,7 @@ install:
 
 # Post-install test scripts.
 test_script:
-  - yarn run test:unit
+  - yarn run test:ci
 
 build_script:
 - cmd: yarn run build
