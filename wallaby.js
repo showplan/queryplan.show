@@ -10,7 +10,7 @@ module.exports = function(w) {
             'tsconfig.json',
             'tsconfig.jest.json',
             { pattern: 'jest.config.js', instrument: false },
-            { pattern: '.babelrc', instrument: false }
+            { pattern: 'babel.config.js', instrument: false }
         ],
 
         tests: ['tests/**/*.spec.ts'],
